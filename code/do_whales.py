@@ -12,26 +12,22 @@
 #   Nature Communications Chemistry 1, 44, 2018.
 # ======================================================================================================================
 
-import time
-
 import numpy as np
-import pandas as ps
 import rdkit.Chem as Chem
 
 import lcm
 import mol_properties
 
 # ----------------------------------------------------------------------------------------------------------------------
-def whales_from_mol(mol, charge_threshold=0, do_charge=True, property_name=''):
+
+
+def whales_from_mol(mol, cnt=0,  charge_threshold=0, do_charge=True, property_name=''):
     # check for correct molecule import, throw an error if import/sanitization fail
 
     mol, err = import_mol(mol)
-    errors = 0
 
     if err == 1:
-        x = np.full((33,), -999.0)
-        errors += err
-        print('Molecule not loaded.')
+        print('Molecule ' + str(cnt) + 'not loaded.')
     else:
         # coordinates and partial charges (checks for computed charges)
         coords, w, err = mol_properties.get_coordinates_and_prop(mol, property_name, do_charge)
@@ -40,10 +36,15 @@ def whales_from_mol(mol, charge_threshold=0, do_charge=True, property_name=''):
             x, lab = do_lcd(coords, w, charge_threshold)
         else:
             x = np.full((33,), -999.0)
-            errors += 1
-            print('No computed charges.')
-
-    return x, lab
+            lab_string = ''
+            perc = range(0, 100 + 1, 10)
+            strings = ['R_', 'I_', 'IR_']
+            lab = list()
+            for j in strings:
+                for i in perc:
+                    lab.append(j + lab_string + str(int(i / 10)))
+            print('Molecule ' + str(cnt) + ' no computed charges.')
+    return x, lab, err
 
 
 def import_mol(mol):
@@ -59,8 +60,8 @@ def import_mol(mol):
         # sanitize
         sanit_fail = Chem.SanitizeMol(mol, catchErrors=True, sanitizeOps=san_opt)
         if sanit_fail:
-            raise ValueError(sanit_fail)
             err = 1
+            raise ValueError(sanit_fail)
 
     return mol, err
 

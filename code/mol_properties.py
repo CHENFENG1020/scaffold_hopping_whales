@@ -41,8 +41,15 @@ def get_coordinates_and_prop(mol, property_name='partial_charges', do_charge=Tru
         for atom in range(n_at):  # loops over atoms, gets 3D coordinate matrix
 
             # gets atomic positions
-            pos = mol.GetConformer().GetAtomPosition(atom)
-            coords[atom, ] = [pos.x, pos.y, pos.z]
+            try:
+                pos = mol.GetConformer().GetAtomPosition(atom)
+            except ValueError:
+                err = 1
+                coords = []
+                w = []
+                return coords, w, err
+            else:
+                coords[atom, ] = [pos.x, pos.y, pos.z]
 
             # gets atomic properties
             w[atom] = mol.GetAtomWithIdx(atom).GetProp(property_name)
@@ -148,4 +155,3 @@ def check_mol(mol, property_name, do_charge):
         err = 1
 
     return err
-
