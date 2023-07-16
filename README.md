@@ -30,6 +30,24 @@ jupyter notebook
 ``
 Click on the notebook file "virtual_screening_pipeline.jpynb". There, you will find additional information on the required calculation steps.
 
+## Use the provided Python script
+Move to the [code](/code) folder, where the Python file is contained. Please make sure you have understand the process by the Jupyter notebook to under stand the output.
+Then run the script with Python:
+- On a system with a display:
+``
+python run_win.py 
+``
+Three file selection dialog boxes will pop up asking you to select files. Select the library file (.sdf), reference molecule file (.sdf or .txt), and settings file (.txt, optional) in that order. Example files are in the data folder.
+
+- On a system without a display: 
+``
+python run.py library_file.sdf molecule_file.txt settings_file.txt
+``
+Then just wait for the program to finish running. The output folder is in the main folder.
+
+# If using SMILES strings for the molecules, the mol file should be a plain text file like .txt, .out, .md instead of .sdf
+# Read the settings file for more details
+
 ## How to cite
 If you use this code or parts thereof, please cite the following papers:
 * Grisoni F, Merk D, Consonni V, Hiss J.A, Giani Tagliabue S, Todeschini R, Schneider G. "Scaffold hopping from natural products to synthetic mimetics by holistic molecular similarity". *Communications Chemistry* **2018**, 1, 1-9. https://www.nature.com/articles/s42004-018-0043-x
