@@ -44,7 +44,7 @@ Then just wait for the program to finish running.
 The program will generate results in the output folder. <div>
 
 
-If your systems has display, you can also run the script as follow:<div>
+If your systems has display, you can also run the script as follows:<div>
 ``
 python run_with_display.py 
 ``
