@@ -1,0 +1,46 @@
+Mission start!
+Results will be saved in F:\PythonProject\whales\out
+Preparing reference moleculer...
+Library address is F:/PythonProject/whales/data/1000+4+2.sdf
+Preparing compounds Library...
+Total molecules in library: 1008
+Should pick: 10
+Error in molecule pre-treatment
+Molecule 1 of 1008 not computed.
+Error in molecule pre-treatment
+Molecule 2 of 1008 not computed.
+Error in molecule pre-treatment
+Molecule 3 of 1008 not computed.
+Molecule: 100/1008
+Molecule: 200/1008
+Molecule: 300/1008
+Molecule: 400/1008
+Molecule: 500/1008
+Molecule: 600/1008
+Error in molecule pre-treatment
+Molecule 614 of 1008 not computed.
+Molecule: 700/1008
+Molecule: 800/1008
+Molecule: 900/1008
+Molecule: 1000/1008
+Moleculer 1007 cannot be read!
+Moleculer 1008 cannot be read!
+Molecules err in library: 6
+Computing WHALES of the reference...
+Computing WHALES of the library...
+Writing wrong molecules...
+Moleculer 1007 cannot be read!
+Moleculer 1008 cannot be read!
+There are 6 molecules not computed !
+Writing WHALES_before_scaled...
+Plotting lib_WHALES_before_scaled...
+Scaling...
+Writing WHALES_after_scaled...
+Plotting lib_WHALES_after_scaled...
+Computing euclidean distance...
+finding hits...
+Number of hits: 10
+Preparing hits file...
+Plotting best 10 hits...
+Mission done!
+time_consumed: 151.52339320000002
