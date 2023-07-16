@@ -41,7 +41,7 @@ python run.py library_file.sdf molecule_file.txt settings_file.txt
 
 Pass file paths as arguments. Example data is in the data folder.
 Then just wait for the program to finish running. 
-The program will generate results in the output folder. 
+The program will generate results in the output folder. <div>
 
 
 If your systems has display, you can also run the script as follow:<div>
@@ -49,11 +49,7 @@ If your systems has display, you can also run the script as follow:<div>
 python run_with_display.py 
 ``
 
-Select files from the pop-up prompts:<div>
-  1.Library file (.sdf)<div>
-  2.Molecule file (.sdf or .txt)<div>
-  3.Settings file (.txt, optional)<div>
-Example files are located in the data folder.
+Three file selection dialog boxes will pop up asking you to select files. Select the library file (.sdf), reference molecule file (.sdf or .txt), and settings file (.txt, optional) in that order. Example files are located in the data folder.
 
 Notes:
   * Use plain text file for SMILES string input and settings
