@@ -1,0 +1,17 @@
+output_name: out
+num_count:0
+pick_num: 0
+
+
+#output_name: 输出文件的名称, 默认为out。
+
+#num_count: 进行计数的间隔数。不设置或设为0时，默认值为分子库总数的十分之一。
+
+#pick_num: 挑选相似化合物的比例。不设置或设为0时, 默认值为10,000。如果分子库总数少于100,000, 将强制选取10个化合物。
+
+
+#output_name: Name of the output file, default is out.
+
+#num_count: Interval number for counting. If not set or set to 0, default is one tenth of the total number of molecules in the library.
+
+#pick_num: Ratio for picking similar compounds. If not set or set to 0, default is 10,000. If total number of molecules in the library is less than 100,000, 10 compounds will be forcibly picked.
