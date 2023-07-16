@@ -10,6 +10,7 @@ Clone the repository, as follows:<div>
 ``
 git clone https://github.com/grisoniFr/scaffold_hopping_whales
 ``
+
 A copy of the repository will be generated on your local machine, in the dedicated GitHub folder. Move to the donwloaded repository to start using it. 
 
 ## Setting up the virtual environment
@@ -28,6 +29,7 @@ Move to the [code](/code) folder, where the Jupyter notebook file is contained, 
 ``
 jupyter notebook
 ``
+
 Click on the notebook file "virtual_screening_pipeline.jpynb". There, you will find additional information on the required calculation steps.
 
 ## Use the provided Python script
@@ -36,6 +38,7 @@ Then run the script with Python:<div>
 ``
 python run.py library_file.sdf molecule_file.txt settings_file.txt
 ``
+
 Pass file paths as arguments.Example data is in the data folder.
 Then just wait for the program to finish running. 
 The program will generate results in the output folder. 
@@ -44,6 +47,7 @@ if your systems has display, you can also run the script as follow:<div>
 ``
 python run_with_display.py 
 ``
+
 Select files from the pop-up prompts:
   1.Library file (.sdf)
   2.Molecule file (.sdf or .txt)
