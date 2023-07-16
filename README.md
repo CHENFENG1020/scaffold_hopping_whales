@@ -33,20 +33,27 @@ Click on the notebook file "virtual_screening_pipeline.jpynb". There, you will f
 ## Use the provided Python script
 Move to the [code](/code) folder, where the Python file is contained. Please make sure you have understand the process by the Jupyter notebook to under stand the output.
 Then run the script with Python:
-- On a system with a display:
-``
-python run_win.py 
-``
-Three file selection dialog boxes will pop up asking you to select files. Select the library file (.sdf), reference molecule file (.sdf or .txt), and settings file (.txt, optional) in that order. Example files are in the data folder.
-
-- On a system without a display: 
 ``
 python run.py library_file.sdf molecule_file.txt settings_file.txt
 ``
-Then just wait for the program to finish running. The output folder is in the main folder.
+Pass file paths as arguments.Example data is in the data folder.
+Then just wait for the program to finish running. 
+The program will generate results in the output folder. 
 
-# If using SMILES strings for the molecules, the mol file should be a plain text file like .txt, .out, .md instead of .sdf
-# Read the settings file for more details
+
+if your systems has display, you can also run the script as follow:
+``
+python run_with_display.py 
+``
+Select files from the pop-up prompts:
+  1.Library file (.sdf)
+  2.Molecule file (.sdf or .txt)
+  3.Settings file (.txt, optional)
+Example files are located in the data folder.
+
+Notes:
+  ·Use plain text file for SMILES string input and settings
+  ·Refer to the settings file for configuration details
 
 ## How to cite
 If you use this code or parts thereof, please cite the following papers:
