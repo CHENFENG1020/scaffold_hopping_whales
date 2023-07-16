@@ -6,7 +6,7 @@ In order to download and run the code, ensure you have the following software on
 *	Git: https://www.atlassian.com/git/tutorials/install-git. 
 
 ## Getting the code
-Clone the repository, as follows:
+Clone the repository, as follows:<div>
 ``
 git clone https://github.com/grisoniFr/scaffold_hopping_whales
 ``
@@ -24,7 +24,7 @@ conda activate scaffold_hopping
 ``
 
 ## Use the provided Jupyter notebook
-Move to the [code](/code) folder, where the Jupyter notebook file is contained, and launch Jupter Notebook, as follows:
+Move to the [code](/code) folder, where the Jupyter notebook file is contained, and launch Jupter Notebook, as follows:<div>
 ``
 jupyter notebook
 ``
@@ -32,7 +32,7 @@ Click on the notebook file "virtual_screening_pipeline.jpynb". There, you will f
 
 ## Use the provided Python script
 Move to the [code](/code) folder, where the Python file is contained. Please make sure you have understand the process by the Jupyter notebook to under stand the output.
-Then run the script with Python:
+Then run the script with Python:<div>
 ``
 python run.py library_file.sdf molecule_file.txt settings_file.txt
 ``
@@ -40,8 +40,7 @@ Pass file paths as arguments.Example data is in the data folder.
 Then just wait for the program to finish running. 
 The program will generate results in the output folder. 
 
-
-if your systems has display, you can also run the script as follow:
+if your systems has display, you can also run the script as follow:<div>
 ``
 python run_with_display.py 
 ``
@@ -52,8 +51,8 @@ Select files from the pop-up prompts:
 Example files are located in the data folder.
 
 Notes:
-  ·Use plain text file for SMILES string input and settings
-  ·Refer to the settings file for configuration details
+  * Use plain text file for SMILES string input and settings
+  * Refer to the settings file for configuration details
 
 ## How to cite
 If you use this code or parts thereof, please cite the following papers:
