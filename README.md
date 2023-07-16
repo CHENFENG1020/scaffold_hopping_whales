@@ -33,7 +33,7 @@ jupyter notebook
 Click on the notebook file "virtual_screening_pipeline.jpynb". There, you will find additional information on the required calculation steps.
 
 ## Use the provided Python script
-Move to the [code](/code) folder, where the Python file is contained. Please make sure you have understand the process by the Jupyter notebook to under stand the output.
+Move to the [code](/code) folder, where the Python file is contained. Please review the Jupyter notebook to understand the workflow and the output.
 Then run the script with Python:<div>
 ``
 python run.py library_file.sdf molecule_file.txt settings_file.txt
